@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Study Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="app-title">Focus on Studies</h1>
+            <select id="lang-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <p id="welcome">Welcome to your professional study environment.</p>
+
+        <div class="grid-layout">
+            <!-- Pomodoro Timer -->
+            <section class="feature-card" id="timer-section">
+                <h2 id="timer-title">Pomodoro Timer</h2>
+                <div id="timer-display">25:00</div>
+                <div class="timer-controls">
+                    <button id="start-btn">Start</button>
+                    <button id="pause-btn">Pause</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </section>
+
+            <!-- Task Manager -->
+            <section class="feature-card" id="task-section">
+                <h2 id="task-title">Task Manager</h2>
+                <div class="task-input-container">
+                    <input type="text" id="task-input" placeholder="Add a new task...">
+                    <button id="add-task-btn">Add</button>
+                </div>
+                <ul id="task-list"></ul>
+            </section>
+
+            <!-- Distraction-free Notepad -->
+            <section class="feature-card" id="notepad-section">
+                <h2 id="notepad-title">Quick Notes</h2>
+                <textarea id="notepad" placeholder="Jot down quick thoughts..."></textarea>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
